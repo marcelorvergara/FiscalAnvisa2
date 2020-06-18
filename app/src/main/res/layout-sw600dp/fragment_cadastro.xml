@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/novoEstabRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".ui.cadastro.CadastroFragment">
+
+    <TextView
+        android:id="@+id/txtLatitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/latitude"
+        app:layout_constraintStart_toStartOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/txtLongitude"
+        android:layout_width="62dp"
+        android:layout_height="13dp"
+        android:layout_marginTop="4dp"
+        android:text="@string/longitude"
+        app:layout_constraintStart_toStartOf="@+id/txtLatitude"
+        app:layout_constraintTop_toBottomOf="@+id/txtLatitude" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="136dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/localiza_o"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAutuacao" />
+
+    <Button
+        android:id="@+id/btnAutuacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/btn_rounded"
+        android:elevation="8dp"
+        android:padding="?android:attr/scrollbarSize"
+        android:stateListAnimator="@null"
+        android:text="@string/cadastrar_anota_o"
+        android:textColor="@color/design_default_color_on_primary"
+        android:translationZ="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtEstabelecimento"
+        tools:targetApi="lollipop" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/cadastro_novo_estabelecimento"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <AutoCompleteTextView
+        android:id="@+id/acMunicipios"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:hint="@string/digite_o_munic_pio_do_estabelecimento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitle" />
+
+    <AutoCompleteTextView
+        android:id="@+id/acBairros"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:hint="@string/digite_o_bairro_do_estabelecimento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acMunicipios" />
+
+    <Button
+        android:id="@+id/btnProximo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_rounded"
+        android:elevation="8dp"
+        android:stateListAnimator="@null"
+        android:text="@string/pr_ximo"
+        android:textColor="@color/design_default_color_on_primary"
+        android:translationZ="4dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnAutuacao"
+        app:layout_constraintEnd_toEndOf="@+id/edtEstabelecimento"
+        tools:targetApi="lollipop" />
+
+    <EditText
+        android:id="@+id/edtEstabelecimento"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/nome_do_estabelecimento"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/acBairros" />
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/btn_rounded"
+        android:elevation="8dp"
+        android:stateListAnimator="@null"
+        android:text="@string/logout"
+        android:textColor="@color/design_default_color_on_primary"
+        android:translationZ="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnProximo"
+        app:layout_constraintTop_toBottomOf="@+id/btnProximo"
+        app:layout_constraintVertical_bias="0.0"
+        tools:targetApi="lollipop" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
