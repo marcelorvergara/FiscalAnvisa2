@@ -25,7 +25,7 @@ class NuvemViewModel : ViewModel() {
         val collection = firebaseFirestore.collection("Avaliacoes")
         collection.addSnapshotListener { querySnapshot, firebaseFirestoreException ->
             if (firebaseFirestoreException != null) {
-                Log.e("Firestore", firebaseFirestoreException.message)
+                Log.e("Firestore", firebaseFirestoreException.message.toString())
             } else {
                 if (querySnapshot != null) {
                     val avaliacoes = querySnapshot.toObjects(Avaliacoes::class.java)

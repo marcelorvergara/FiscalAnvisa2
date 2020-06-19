@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/consultaLayout"
@@ -9,10 +10,25 @@
     tools:context=".ui.consulta.ConsultaFragment">
 
     <Button
+        android:id="@+id/lConsumoAnuncio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/btn_rounded"
+        android:elevation="8dp"
+        android:padding="6dp"
+        android:stateListAnimator="@null"
+        android:text="Consumir"
+        android:textColor="@color/design_default_color_on_primary"
+        android:translationZ="4dp"
+        ads:layout_constraintEnd_toEndOf="@+id/btnAutuacoesLista"
+        ads:layout_constraintTop_toTopOf="parent"
+        tools:targetApi="lollipop" />
+
+    <Button
         android:id="@+id/btnAutuacoesLista"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
         android:layout_marginTop="85dp"
         android:background="@drawable/btn_rounded"
         android:elevation="8dp"
@@ -21,7 +37,7 @@
         android:text="@string/listar_autua_es"
         android:textColor="@color/design_default_color_on_primary"
         android:translationZ="4dp"
-        app:layout_constraintStart_toEndOf="@+id/rvAvaliacoes"
+        app:layout_constraintEnd_toEndOf="@+id/logoutBtnConsulta"
         app:layout_constraintTop_toTopOf="parent"
         tools:targetApi="lollipop" />
 
@@ -54,22 +70,40 @@
         android:id="@+id/logoutBtnConsulta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginEnd="61dp"
         android:background="@drawable/btn_rounded"
         android:elevation="8dp"
         android:stateListAnimator="@null"
         android:text="@string/logout"
         android:textColor="@color/design_default_color_on_primary"
         android:translationZ="4dp"
-        app:layout_constraintStart_toEndOf="@+id/rvAvaliacoes"
+        ads:layout_constraintBaseline_toBaselineOf="@+id/logoutBtnRemoveAnuncio"
+        ads:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAutuacoesLista"
+        tools:targetApi="lollipop" />
+
+    <Button
+        android:id="@+id/logoutBtnRemoveAnuncio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/btn_rounded"
+        android:elevation="8dp"
+        android:padding="12dp"
+        android:stateListAnimator="@null"
+        android:text="Remover Anuncios"
+        android:textColor="@color/design_default_color_on_primary"
+        android:translationZ="4dp"
+        ads:layout_constraintStart_toEndOf="@+id/adView"
+
         app:layout_constraintTop_toBottomOf="@+id/btnAutuacoesLista"
         tools:targetApi="lollipop" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvAvaliacoes"
         android:layout_width="450dp"
-        android:layout_height="120dp"
+        android:layout_height="60dp"
         android:layout_marginStart="14dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="24dp"
@@ -81,4 +115,37 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/txtSubtitulo" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="16dp"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rvAvaliacoes" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:fontFamily="@font/artifika"
+        android:text="@string/login"
+        android:textSize="16sp"
+        ads:layout_constraintBaseline_toBaselineOf="@+id/txtTitle"
+        ads:layout_constraintStart_toEndOf="@+id/txtTitle" />
+
+    <TextView
+        android:id="@+id/txtLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:fontFamily="@font/artifika"
+        android:textSize="16sp"
+        ads:layout_constraintBaseline_toBaselineOf="@+id/textView15"
+        ads:layout_constraintStart_toEndOf="@+id/textView15" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

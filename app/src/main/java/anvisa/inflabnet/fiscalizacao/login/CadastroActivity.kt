@@ -38,6 +38,7 @@ class CadastroActivity : AppCompatActivity() {
         } else if (passLogin != passLoginConfirm){
             showSnackbar("As senhas digitadas não conferem!")
         } else{
+
             mAuth!!.createUserWithEmailAndPassword(userLogin, passLogin)
                 .addOnSuccessListener {
                     if(it != null){
