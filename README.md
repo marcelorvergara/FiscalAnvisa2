@@ -11,4 +11,10 @@
 
 #### Como foi desenvolvido?
 
-- Feito no Android Studio com a linguagem Kotlin, esse aplicativo conta também com o banco de dados NoSQL Firestore do Google Firebase
+- Feito no Android Studio com a linguagem Kotlin, esse aplicativo conta também com o banco de dados NoSQL Firestore do Google Firebase.
+
+#### O que falta?
+
+- Criação de uma rotina de backup dos dados armazenados no firebase.
+- Melhorar o layout para as telas em tablets.
+- Ajustar as cores para melhorar o contraste e aumentar a legibilidade dos textos contidos nos botões.
