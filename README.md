@@ -1,7 +1,22 @@
 	
 ## Fiscal Legal - Fiscalize Estabelecimentos
 
-<img src="https://play-lh.googleusercontent.com/c4qJJvBB83b5LEAFIfo345jj3SdxRONzGrdVgOK1mCFBoZ52QKcd26uDm4QfgH45TQ=w720-h310-rw">  <img src="https://play-lh.googleusercontent.com/xNwxgQo-JNRINVHMBo1zvYQpkr3S5qHJV_fBCSu68o7TurIfCm7aUnLeJ4zt6mfQPSA=w720-h310-rw"> <img src="https://play-lh.googleusercontent.com/bqcN9GVLYAoepAfA2Wbp_9n7aZosWlRklzzpHSWXgQIyPyG__IyEGKdXCVhnJfK7kg=w720-h310-rw">  <img src="https://play-lh.googleusercontent.com/8-jDstxHb7vgt4gjY_IuBxVzJFXKjKTx0qmfAY9NfHYBBcf8_Eb_hXDdsNTL_X2zTg=w720-h310-rw">
+<table>
+	<tr>
+		<td>
+			<img src="https://play-lh.googleusercontent.com/c4qJJvBB83b5LEAFIfo345jj3SdxRONzGrdVgOK1mCFBoZ52QKcd26uDm4QfgH45TQ=w720-h310-rw">
+		</td>
+		<td>
+			<img src="https://play-lh.googleusercontent.com/xNwxgQo-JNRINVHMBo1zvYQpkr3S5qHJV_fBCSu68o7TurIfCm7aUnLeJ4zt6mfQPSA=w720-h310-rw">
+		</td>
+		<td>
+			<img src="https://play-lh.googleusercontent.com/bqcN9GVLYAoepAfA2Wbp_9n7aZosWlRklzzpHSWXgQIyPyG__IyEGKdXCVhnJfK7kg=w720-h310-rw">
+		</td>
+		<td>
+			<img src="https://play-lh.googleusercontent.com/8-jDstxHb7vgt4gjY_IuBxVzJFXKjKTx0qmfAY9NfHYBBcf8_Eb_hXDdsNTL_X2zTg=w720-h310-rw">
+		</td>
+	</tr>
+</table>	     
 
 ### <a href="https://play.google.com/store/apps/details?id=anvisa.inflabnet.fiscalizacao"> Disponível na Play Store </a>
 
